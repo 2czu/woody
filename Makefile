@@ -6,7 +6,7 @@
 #    By: pacda-si <pacda-si@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/23 16:41:00 by pacda-si          #+#    #+#              #
-#    Updated: 2025/07/27 18:29:07 by pacda-si         ###   ########.fr        #
+#    Updated: 2025/07/29 12:41:06 by pacda-si         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -56,7 +56,7 @@ all: $(NAME)
 
 $(NAME): $(OBJS) $(INCS)
 	@echo "$(BLOOD_RED)$(BOLD)Making $(NAME)...$(RESET)"
-	@$(CC) $(OBJS) -o $(NAME)
+	@$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
 	@echo "$(NEON_GREEN)$(BOLD)Made $(NAME) without any problem. ✔\n$(RESET)"
 
 $(OBJS_DIR)/%.o: $(SRCS_DIR)/%.cpp
